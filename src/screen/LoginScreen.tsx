@@ -21,10 +21,9 @@ export default function LoginScreen() {
   // Grabs the dispatch function so we can send actions to Redux later.
   const dispatch = useDispatch<AppDispatch>();
 
-  // Pre-filled with the test credentials, just to make testing faster.
-  // (In a real app, these would start empty.)
-  const [username, setUsername] = useState<string>('kminchelle');
-  const [password, setPassword] = useState<string>('0lelplR');
+  // Pre-filled with valid DummyJSON test credentials (e.g., username: 'emilys', password: 'emilyspass')
+  const [username, setUsername] = useState<string>('emilys');
+  const [password, setPassword] = useState<string>('emilyspass');
 
   // Tracks whether the login request is currently in progress,
   // so we can show a spinner and disable the button while waiting.
